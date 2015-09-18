@@ -1,0 +1,31 @@
+<!Doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="image/png" href="img/favicon.icon">
+		<link rel="stylesheet" type="text/css" href="css/game.css">
+	</head>
+	<body>
+		<select id="gameMode">
+			<option value="1000">F&aacute;cil</option>
+			<option value="800">M&eacute;dio</option>
+			<option value="600">Dif&iacute;cil</option>
+		</select>
+		
+		Score <input type="text" id="score" size="10" value="0" />
+		<button id="startGame" type="button">Start</button>
+		<div id="game">
+		</div>
+		<div class="teste">
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/Game.js"></script>
+		<script type="text/javascript">
+			var game = new Game();
+			$('#startGame').click(function () {
+				game.play()
+			});
+		</script>
+	</body>
+</html>
