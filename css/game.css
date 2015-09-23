@@ -58,7 +58,7 @@ form .score input {
 .bug {
 	width: 48px;
 	height: 48px;
-	curso: 
+	cursor: crosshair;
 	position: absolute;
 }
 

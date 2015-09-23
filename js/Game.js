@@ -25,6 +25,8 @@ var Game = function () {
 			top = 'top:'+Math.floor((Math.random() * 272))+'px;',
 			img = Math.floor((Math.random() * 4))+1;
 		
+		console.log(left);
+		
 		$('#game').html('<div class="bug bug'+img+'" style="'+top+left+'"></div>');
 		
 		window.timeoutBug = setTimeout('window.generateBug()', window.durationBug)
