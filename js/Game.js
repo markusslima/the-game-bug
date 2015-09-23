@@ -21,18 +21,11 @@ var Game = function () {
 	
 	window.generateBug = function () {
 		clearTimeout(window.timeoutBug);
-		var arr = [
-				'img/ant.png',
-				'img/butterfly.png',
-				'img/cricket.png',
-				'img/dragon_fly.png',
-				'img/ladybug.png'
-			],
-			left = 'left:'+Math.floor((Math.random() * 452))+'px;',
-			top = 'top:'+Math.floor((Math.random() * 352))+'px;',
-			img = arr[Math.floor((Math.random() * 5))];
+		var left = 'left:'+Math.floor((Math.random() * 292))+'px;',
+			top = 'top:'+Math.floor((Math.random() * 272))+'px;',
+			img = Math.floor((Math.random() * 4))+1;
 		
-		$('#game').html('<div class="bug" style="'+top+left+'"><img src="'+img+'">');
+		$('#game').html('<div class="bug bug'+img+'" style="'+top+left+'"></div>');
 		
 		window.timeoutBug = setTimeout('window.generateBug()', window.durationBug)
 	};

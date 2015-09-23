@@ -6,19 +6,22 @@
 		<link rel="stylesheet" type="text/css" href="css/game.css">
 	</head>
 	<body>
-		<select id="gameMode">
-			<option value="1000">F&aacute;cil</option>
-			<option value="800">M&eacute;dio</option>
-			<option value="600">Dif&iacute;cil</option>
-		</select>
-		
-		Score <input type="text" id="score" size="10" value="0" />
-		<button id="startGame" type="button">Start</button>
-		<div id="game">
+		<div class="name"><img src="img/name.png"></div>
+		<div id="container-game">
+			
+			<form>
+				<select id="gameMode">
+					<option value="1000">F&aacute;cil</option>
+					<option value="800">M&eacute;dio</option>
+					<option value="600">Dif&iacute;cil</option>
+				</select>
+				<button id="startGame" type="button">Start</button>
+				<div class="score">
+					Score <input type="text" id="score" disabled>
+				</div>
+			</form>
+			<div id="game"></div>
 		</div>
-		<div class="teste">
-		</div>
-		
 		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="js/Game.js"></script>
 		<script type="text/javascript">
